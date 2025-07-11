@@ -1,50 +1,99 @@
 # 🏡 Panchayat Database Management System
 
-A full stack web application developed as part of **Summer Community Connect 2025** to digitize and streamline citizen and village record management for Panchayat offices. This system allows administrators to manage personal, demographic, and identification details of residents through a secure and user-friendly interface.
+## 🌾 Community Connect Project – Panchayat DBMS
 
-## ✨ Features
+This is a full-stack web application designed to manage and streamline data related to a Panchayat or Municipality. It helps office administrators manage village/area details, citizen records, and essential demographic information with ease.
 
-- 🔐 Admin login with secure authentication  
-- 📋 Add, view, edit, and delete citizen and village records  
-- ⚡ Real-time database updates using Supabase  
-- 💻 Responsive frontend built with React.js  
-- 🧩 Structured data handling with relational schemas
+---
 
-## 🛠 Tech Stack
+## 🚀 Features
 
-- **Frontend:** React.js, HTML5, CSS3  
-- **Backend & Database:** Supabase (PostgreSQL, Auth, REST API)  
-- **Tools:** Git, GitHub, VS Code
+- 🔐 Admin login system with secure access
+- 🏘️ Manage list of villages or areas under the Panchayat
+- 👤 Add, edit, or remove citizen records
+- 🧾 Store and update citizen details including:
+  - Full Name, Gender, DOB
+  - Address, Aadhar Number
+  - Family/Head of Household Info
+  - Occupation & Income
+  - Phone, Email, Education
+  - Special Notes or Schemes
+- 📊 View summarized reports by area or demographic category
+- 🔄 Easily update or delete outdated records
 
-## 🚀 Getting Started
+---
 
-Follow these steps to run the project locally:
+## ⚙️ Technologies Used
 
-### 1. Clone the Repository
+- **Supabase** – Cloud database and authentication
+- **React.js** – Frontend framework
+- **Tailwind CSS** – For sleek and modern styling
+- **Vite** – Fast bundling and development
 
-  git clone https://github.com/your-username/panchayat-dbms.git
-  
-  cd panchayat-dbms
+---
 
-### 2. Install Dependencies
+## 🙏 Special Thanks
 
-  npm install
+Gratitude to **SRM Institute of Science and Technology** for providing the opportunity to work on this impactful community project under the Community Connect Initiative.
 
-### 3. Configure Environment Variables
+---
 
-  Create a .env file in the root directory and add your Supabase credentials:
-  
-  VITE_SUPABASE_URL=your_supabase_project_url
-  
-  VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-  
-  You can find these values in your Supabase project settings.
+## 💾 How to Run This Project
 
-### 4. Start the Development Server
+### 1. 📦 Clone the Repository
 
-  npm run dev
-  
-  Visit http://localhost:5173 in your browser to view the application.
+```bash
+git clone https://github.com/your-username/panchayat-dbms.git
+cd panchayat-dbms
+```
 
-### 📄 License
-  This project is open source.
+### 2. 📁 Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. ⚙️ Configure Supabase
+
+Create a new project on [Supabase](https://supabase.com) and create the required tables:
+
+- `areas`
+- `citizens`
+- `admins`
+
+Ensure proper foreign key relationships and indexing.
+
+### 4. 🔐 Add Environment Variables
+
+Create a `.env` file in the root and add your Supabase credentials:
+
+```env
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+### 5. ▶️ Run Development Server
+
+```bash
+npm run dev
+```
+
+Visit:  
+🌐 `http://localhost:5173`
+
+---
+
+## ✅ Admin Login (for demo)
+
+```
+Username: admin
+Password: admin123
+```
+
+Update these in Supabase `admins` table if needed.
+
+---
+
+## 📃 License
+
+Developed under Community Connect by me for rural governance and data management. Open for enhancement and adaptation.
